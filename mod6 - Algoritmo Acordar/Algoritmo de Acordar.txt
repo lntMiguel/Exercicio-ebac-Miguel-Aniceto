@@ -1,0 +1,35 @@
+Algoritmo de Acordar
+
+1- Acordo
+2- Abro os olhos
+3- Levanto da cama
+4- Saio do quarto
+5- Vou a cozinha
+6- Abro um armário 
+7- Pego um copo
+8- Vou ao bebedouro
+9- Encho o copo de água
+10- Tomo a água
+11- Lavo o copo
+12- Seco o copo
+13- Pego a garrafa de cafa
+14- coloco café no copo
+15- ponho o copo na mesa
+16- abro outro ármario
+17- pego o pão
+18- ponho o pão na mesa
+19- abro a geladeira
+20- pego a manteiga
+21- ponho a manteiga na mesa 
+22- abro a gaveta de talheres
+23 - pego uma faca
+24 - vou até a mesa 
+25 - sento em uma cadeira
+26 - pego a faca
+27 - abro a manteiga
+28 - pego o pão 
+29 - corto o pão com a faca
+30 - passo um pouco de manteiga na faca
+31 - passo a faca com a manteiga no pão
+32 - fecho o pão
+33 - mordo o pão e tomo café 

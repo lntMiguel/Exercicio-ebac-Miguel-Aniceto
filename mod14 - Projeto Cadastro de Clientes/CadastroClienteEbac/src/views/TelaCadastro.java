@@ -316,7 +316,7 @@ public class TelaCadastro extends javax.swing.JFrame {
 
         //caso nenhuma linha for selecionada, uma caixa de dialogo aparece
         else
-        JOptionPane.showMessageDialog(rootPane, "Selecione uma linha para editar");
+            JOptionPane.showMessageDialog(rootPane, "Selecione uma linha para editar");
     }//GEN-LAST:event_btnEditarActionPerformed
 
     private void btnExcluirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnExcluirActionPerformed
@@ -334,7 +334,7 @@ public class TelaCadastro extends javax.swing.JFrame {
 
         //caso nenhuma linha for selecionada, uma caixa de dialogo aparece
         else
-        JOptionPane.showMessageDialog(rootPane, "Selecione uma linha para exluir");
+            JOptionPane.showMessageDialog(rootPane, "Selecione uma linha para exluir");
     }//GEN-LAST:event_btnExcluirActionPerformed
 
     private void btnCadastrarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCadastrarActionPerformed
@@ -347,14 +347,16 @@ public class TelaCadastro extends javax.swing.JFrame {
             //caso tenha uma linha selecionada
             if(tblCliente.getSelectedRow() != -1){
                 Validador objValidador = new Validador();
-
+                //validação
                 objValidador.validarTexto(txtNome);
                 objValidador.validarTexto(txtEndereco);
                 objValidador.validarTexto(txtCidade);
                 objValidador.validarTexto(txtEstado);
                 objValidador.validarTelefone(txtTelefone);
                 objValidador.validarNumero(txtNumero);
-
+                
+                //se houver erros exibe mensagens e não permite o cadastro
+                
                 if(objValidador.hasErro()){
                     JOptionPane.showMessageDialog(rootPane, objValidador.getMensagensErro());
 

@@ -15,12 +15,13 @@ import javax.swing.JTextField;
 import javax.swing.table.DefaultTableModel;
 
 public class Validador {
-    
+    //arraylist que vai conter todas as mensagens de erro
     public ArrayList<String> mensagensErro = new ArrayList<>();
     
     
     public void validarNumero(JTextField txt){
-    
+    //tentativa de conversão para numero, caso não ocorra, um erro é gerado e registramos o erro para avisar ao úsuario
+    //digitar apenas numeros
         try{
             
             //Verifico se o campo está vazio
@@ -42,6 +43,7 @@ public class Validador {
     }
     
     public void validarCPF(JFormattedTextField cpf, DefaultTableModel tabela){
+        //validação de cpf, primeiro checamos se o cpf é nulo, caso não seja, verificamos se há algum cliente cadastrado com o cpf informado
         cpf.setBackground(Color.WHITE);
         if("   .   .   -  ".equals(cpf.getText())){
              this.mensagensErro.add("Digite um CPF");
@@ -61,7 +63,7 @@ public class Validador {
     }
     
     public void validarTelefone(JFormattedTextField tel){
-        
+        //verificar se o telefone é nulo
         tel.setBackground(Color.WHITE);
         if("(  )     -    ".equals(tel.getText())){
              this.mensagensErro.add("Digite um telefone");
@@ -70,7 +72,7 @@ public class Validador {
     }
      
     public void validarTexto(JTextField txt){
-     
+        //validar as entradas de texto para garantir que não seja nulo
          try{
             
             //Verifico se o campo está vazio
@@ -88,31 +90,10 @@ public class Validador {
      }
      
      public void limparMensagens(){
-     
+         //limpar arraylisy com as mensagens de erro
          this.mensagensErro.clear();
      }
      
-     /**@deprecated substituida por {@link #getMensagensErro()}
-      * Método para exibir mensagens de erro na tela com JOptionPane
-      */
-     public void ExibirMensagensErro(){
-         
-        String errosFormulario = "";
-        for (String msg : this.mensagensErro) {
-            errosFormulario += msg + "\n";
-        }
-        
-        if(!errosFormulario.equals("")){
-            JOptionPane.showMessageDialog(null, errosFormulario);
-            this.limparMensagens();
-        }     
-
-     }
-     
-     /**
-      * Resgata todos os erros gerados em uma única String
-      * @return 
-      */
      public String getMensagensErro(){
          
         String errosFormulario = "";

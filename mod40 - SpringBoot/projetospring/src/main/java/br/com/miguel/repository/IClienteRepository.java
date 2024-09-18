@@ -1,0 +1,11 @@
+package br.com.miguel.repository;
+
+import org.springframework.data.repository.CrudRepository;
+import org.springframework.stereotype.Repository;
+
+import br.com.miguel.models.Cliente;
+
+@Repository
+public interface IClienteRepository extends CrudRepository<Cliente, Long>{
+	
+}

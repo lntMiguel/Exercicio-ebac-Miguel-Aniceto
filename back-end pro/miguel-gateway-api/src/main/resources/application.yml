@@ -1,0 +1,22 @@
+server:
+    port: 8081
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+  endpoint:
+    gateway:
+      enabled: true
+
+spring:
+  application:
+    name: miguel-gateway-api
+  cloud:
+    gateway:
+      routes:
+        - id: google
+          uri: https://google.com
+          predicates:
+            - Path=/search**

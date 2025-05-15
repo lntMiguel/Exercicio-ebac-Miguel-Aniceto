@@ -1,0 +1,34 @@
+Projeto: Migração de Monolito para Microsserviços
+Este projeto consistiu na migração de uma aplicação originalmente monolítica para uma arquitetura baseada em microsserviços. O principal objetivo foi tornar o sistema mais modular, escalável e de fácil manutenção, seguindo boas práticas de desenvolvimento de software.
+
+💡 O que foi feito
+Reestruturei toda a aplicação usando Java e Spring Boot.
+
+Dividi o sistema em microsserviços bem definidos, respeitando os limites de cada parte do negócio.
+
+Garanti que os serviços fossem independentes entre si, mas ainda assim pudessem se comunicar de forma eficiente.
+
+Para isso, utilizei ferramentas como Apache Zookeeper e OpenFeign, que ajudaram na descoberta e integração entre os serviços.
+
+Usei MongoDB como banco de dados, lidando com situações onde a consistência pode ser eventual.
+
+Implementei práticas de observabilidade para facilitar o acompanhamento do sistema em funcionamento:
+
+Logs estruturados
+
+Tracing distribuído
+
+Monitoramento com Zipkin
+
+🧠 Principais aprendizados
+Durante o projeto, pude aplicar conceitos como:
+
+Princípios SOLID e Clean Code, garantindo um código mais limpo, organizado e de fácil evolução.
+
+Identificação e definição de limites contextuais, que são essenciais na arquitetura de microsserviços.
+
+Boas práticas em integração entre sistemas, persistência de dados e monitoramento de aplicações.
+
+✅ Resultado
+O projeto foi finalizado com sucesso, atendendo todos os requisitos propostos e validado pelo professor responsável. Essa experiência reforçou minhas habilidades em arquitetura de software e desenvolvimento backend com foco em qualidade e escalabilidade.
+
